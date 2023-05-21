@@ -57,4 +57,3 @@ The CLI script can be like this:
 ...
 ```
 
-## 

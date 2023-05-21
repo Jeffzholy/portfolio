@@ -1,5 +1,6 @@
-{ 
+{
   "extends": "markdownlint/style/prettier",
   "single-title": false,
-  "no-inline-html": false
+  "no-inline-html": false,
+  "line-length": false
 }
