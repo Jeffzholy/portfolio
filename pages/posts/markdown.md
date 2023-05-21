@@ -3,10 +3,35 @@ title: Markdown Examples
 date: 2021/3/19
 description: View examples of all possible Markdown options.
 tag: web development
-author: You
+author: Jeff
 ---
 
 # Markdown Examples
+
+Some text here
+
+Some more text here
+
+Some text
+
+- Some
+- List
+
+1. Some
+2. List
+   Some text
+
+Some text
+
+```
+Code block
+```
+
+```js
+Another code block
+```
+
+Some more text
 
 ## h2 Heading
 
@@ -94,6 +119,6 @@ export default function Nextra({ Component, pageProps }) {
 
 [^1]: Footnote **can have markup**
 
-    and multiple paragraphs.
+> and multiple paragraphs.
 
 [^2]: Footnote text.

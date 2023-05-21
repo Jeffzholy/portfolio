@@ -1,2 +1,9 @@
 const withNextra = require('nextra')('nextra-theme-blog', './theme.config.js')
-module.exports = withNextra()
+
+const nextConfig = {
+  images: {
+    domains: ['images.unsplash.com']
+  }
+}
+
+module.exports = withNextra(nextConfig)
