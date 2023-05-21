@@ -1,0 +1,15 @@
+---
+type: page
+title: About
+date: 2021-03-19
+---
+
+# Me
+
+Hello world, I'm Jeff, I'm a javascript developer and living in Beijing. I enjoy crafting beautiful and fast web applications with cutting-edge techs.
+
+I love to share my thoughts, fun times with the world 🤓
+
+---
+
+[GitHub](https://github.com/Jeffzholy) · [LinkedIn](https://www.linkedin.com/in/jeff-zhen-zhang/)

@@ -6,11 +6,8 @@ title: Tagged Posts
 import { useRouter } from 'next/router'
 
 export const TagName = () => {
-console.log(useRouter().query, 'called')
 
 const { tag } = useRouter().query
-
-console.log(tag, 'called')
 
 return tag || null
 }

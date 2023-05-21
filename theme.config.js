@@ -1,28 +1,24 @@
 const YEAR = new Date().getFullYear()
 
-export default {
-  footer: (
+const Footer = () => {
+  return (
     <small
       style={{
         display: 'flex',
         justifyContent: 'space-between',
-        marginTop: '8rem',
-        backgroundColor: 'red'
+        marginTop: '8rem'
       }}
     >
       <p>
-        <time style={{ backgroundColor: 'green' }}>{YEAR}</time> © Jeff Zhang.
+        <time>{YEAR}</time> © Jeff Zhang.
       </p>
-      <p style={{ backgroundColor: 'yellow' }}>
+      <p>
         powered by &nbsp; <a href="https://nextra.vercel.app/">@Nextra</a>
       </p>
       {/* <p>
         <a href="/feed.xml">RSS</a>
       </p> */}
       <style jsx>{`
-        a {
-          float: right;
-        }
         @media screen and (max-width: 480px) {
           article {
             padding-top: 2rem;
@@ -33,3 +29,9 @@ export default {
     </small>
   )
 }
+
+const themeConfig = {
+  footer: <Footer />
+}
+
+export default themeConfig
