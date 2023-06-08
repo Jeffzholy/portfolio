@@ -2,7 +2,7 @@
 title: CSS-in-JS and its SSR strategies
 date: 2023/04/04
 description: What is CSS-in-JS and its SSR strategies
-tag: tech
+tag: CSS
 author: Jeff Zhang
 ---
 
