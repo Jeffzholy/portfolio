@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   const meta = {
-    title: "Jeff's Portfolio site",
+    title: 'Portfolio site of Jeff Zhang',
     description:
       'A frontend developer loves to make fun and interactive things.',
     image: './favicon.ico'
@@ -12,7 +12,14 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="robots" content="follow, index" />
+
+        <meta name="author" content="Jeff Zhang" />
+        <meta
+          name="keywords"
+          content="frontend, developer, HTML, CSS, JavaScript, React"
+        />
         <meta name="description" content={meta.description} />
+
         <meta property="og:site_name" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
