@@ -16,23 +16,9 @@ export default function Nextra({ Component, pageProps }) {
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
+        <link rel="icon" sizes="32x32" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
+
         {/* <link rel="manifest" href="/site.webmanifest" /> */}
         <link
           rel="alternate"
@@ -40,16 +26,15 @@ export default function Nextra({ Component, pageProps }) {
           title="RSS"
           href="/feed.xml"
         />
-
-        {/* TODO use local js to avoid network error, see if can be improved*/}
       </Head>
-        <Script
-          src="./scripts/linkedin-badge.js"
-          // src="https://platform.linkedin.com/badges/js/profile.js"
-          async
-          defer
-          type="text/javascript"
-        />
+      {/* TODO use local js to avoid network error, see if can be improved*/}
+      <Script
+        src="./scripts/linkedin-badge.js"
+        // src="https://platform.linkedin.com/badges/js/profile.js"
+        async
+        defer
+        type="text/javascript"
+      />
       <Component {...pageProps} />
       <Analytics />
     </>

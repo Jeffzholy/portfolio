@@ -11,25 +11,13 @@ Here's some of my photography.
 ## Malaysia
 
 import Image from 'next/image'
+import firstImage from 'images/Malaysia/Redang/1.jpg'
+import secondImage from 'images/Malaysia/Redang/2.jpg'
 
 > Drone photo of Redang island
 
-<Image
-  src="/images/Malaysia/Redang/1.jpg"
-  alt="Redang island"
-  width={4000}
-  height={2250}
-  priority
-  className="next-image"
-/>
+<Image src={firstImage} alt="Redang island" placeholder="blur" />
 
 > Drone photo of Kuala Terengganu
 
-<Image
-  src="/images/Malaysia/Redang/2.jpg"
-  alt="Kuala Terengganu"
-  width={2000}
-  height={1125}
-  priority
-  className="next-image"
-/>
+<Image src={secondImage} alt="Kuala Terengganu" placeholder="blur" />
