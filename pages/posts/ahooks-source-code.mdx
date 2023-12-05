@@ -1,0 +1,21 @@
+---
+title: A hook a day keeps the messy codes away
+date: 2023/12/05
+description: Source code explanation of a hook a day
+tag: development
+author: Jeff Zhang
+---
+
+# A hook a day keeps the messy codes away
+
+In this series of posts, I will explore the source code of a hook per day. And the main focus will be on the core functionality.
+
+| Days  | Hooks        | Status |
+| ----- | ------------ | ------ |
+| 12/05 | useCountDown | ✅     |
+| 12/06 |              |        |
+| ...   |              |        |
+
+### [useCountDown](https://github.com/alibaba/hooks/blob/master/packages/hooks/src/useCountDown/index.ts)
+
+The core is to use a `useEffect` to set an interval which will: `1. update the left time state on each interval, 2. clear the interval when there's no time left`. And don't forget to clear the interval when the effect callback is cleaned.
